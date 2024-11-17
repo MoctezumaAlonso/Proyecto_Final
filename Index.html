@@ -6,31 +6,35 @@
     <title>Comic Reader</title>
     <style>
         h1 {
-            color: blue;
+            color: rgb(55, 0, 255);
         }
         body{
-            background-color: darkgray;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/208/140/small_2x/cartoon-comic-halftone-background-free-vector.jpg");
         }
         label{
             color: black;
         }
         button{
             color: blanchedalmond;
-            background-color: beige;
+            background-color: black;
         }
     </style>
 </head>
 <body>
-    <center><h1>Comics Reader´s</h1>
+    <center><h1><b>Comics Reader´s</b></h1>
         <h2>Lector de comic en español</h2>
     </center>
-    
+    <img src="https://statics.pampling.com/imagenes/disenos/diseno_49634.jpg?1723400848" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar" width="150" height="150" align="left"/>
+    <img src="https://statics.pampling.com/imagenes/disenos/diseno_49634.jpg?1723400848" alt="Esta es una descripcion alternativa de la imagen para cuando no se pueda mostrar" width="150" height="150" align="right"/>
     <label><h3>¿Que hacemos aqui?</h3></label>
     <p>En esta pagina compartimos comics traducidos al español catalogandolos por su casa editorial y run correspondiente</p>
-    <label>¿Con que puedo empezar?</label>
+    <label><h3>¿Con que puedo empezar?</h3></label>
     <p>Cada historia esta presentada por un resumen del administrador el cual te ayudara a saber mas sobre la historia principal, el arte utilizado, el autor, la casa editorial y cualquier otro aspecto que se considere importante para dar una mejor idea de la calidad de la historia</p>
     <label><b>Casas editoriales:</b></label>
-    <label><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgrimoriogeek.com%2Flas-mejores-editoriales-de-comics-y-sus-creaciones%2F&psig=AOvVaw1vOSnA0hP4--vEmV0OgD0c&ust=1731964823737000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLjZ5IGm5IkDFQAAAAAdAAAAABAJ"></label>
+    <center>
+        <p><img src="https://grimoriogeek.com/wp-content/uploads/2024/05/Mejores-Editoriales-de-Comics.jpg.webp" width="1200" height="250" alt="Imagen de las Mejores-Editoriales-de-Comics"></p>
+    </center>
+    
     <ul>
         <li> DC Comics</li>
         <li> Marvel Comics</li>
@@ -40,12 +44,36 @@
     </ul>
     <label><b>Recomendaciones del mes:</b></label>
     <ol>
-        <li> Irredeemable Vol. 1</li>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVhpV1CaNCMGLz8zeZd1H1aEQXmnnrjk_Ddw&s">
-        <a href="https://megabanana.mx/leer-irredeemable-incorruptible-comic-online-en-espanol/"></a>
-        <li> Marvel Zombies Resurrection</li>
-        <img src="https://static.wikia.nocookie.net/marveldatabase/images/b/bb/Marvel_Zombies_Resurrection_Vol_1_1.jpg/revision/latest?cb=20191015102656">
-        <a href="https://megabanana.mx/leer-marvel-zombies-volumen-1-2-3-4-y-5-online-en-espanol/"></a>
+        <li> Irredeemable Vol. 1 <a href="https://megabanana.mx/leer-irredeemable-incorruptible-comic-online-en-espanol/">Click aqui</a></li> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVhpV1CaNCMGLz8zeZd1H1aEQXmnnrjk_Ddw&s" alt="Rcomendacion 1">
+        
+        <li> Marvel Zombies Resurrection <a href="https://megabanana.mx/leer-marvel-zombies-volumen-1-2-3-4-y-5-online-en-espanol/">Click aqui</a></li>
+        <img src="https://megabanana.mx/wp-content/uploads/2021/08/marvel-zombies-1.jpg" alt="recomendacion 2" width="200" height="300">
+        
     </ol>
+    <h2>Sugerencias y comentarios</h2>
+    <p>Ayudanos a mejorar y sugiere que titulos quieres ver proximamente</p>
+    <form action="">
+        <label>Comic: </label>
+        <input type="text" id="comic" name="comic"/>
+        <br><br>
+        <label> Autor: </label>
+        <input type="text" id="author" name="author"/>
+        <br><br>
+        <label>Año: </label>
+        <input type="date" id="anio" name="anio"/>
+        <br><br>
+        <label>¿Porque te interesa esta historia?</label>
+        <select name="seleccion" id="seleccion">
+            <option value=""  disabled selected>Seleccione</option>
+            <option value="napo">El autor</option>
+            <option value="peppe">La historia</option>
+            <option value="pv">El arte grafica</option>
+            <option value="quesos">El personaje central</option>
+        </select>
+        <br><br>
+        <p>Gracias por su comentarios y/o sugerencias </p>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
